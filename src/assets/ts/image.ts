@@ -1,6 +1,6 @@
 import { FileExplorer } from "./fileExplorer";
 
-export class ImageElement {
+export class Image {
     public readonly path: string;
     public readonly alt: string;
 

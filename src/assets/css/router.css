@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+#router {
+    @apply grid grid-flow-col grid-cols-3 gap-20 max-w-200 place-items-center place-self-center;
+}
+
+#shortcut {
+    @apply grid gap-10 rounded-xl place-items-center;
+}
+
+.shortcut-transition {
+    @apply transition duration-500 ease-out;
+}
+
+.shortcut-button {
+    @apply border border-slate-600 rounded-full shadow-xl shadow-slate-600;
+}
+
+.shortcut-button:hover {
+    @apply cursor-pointer;
+}
+
+.shortcut-text {
+    @apply opacity-0 text-xl font-semibold text-white;
+}
+
+#shortcut:hover .shortcut-button {
+    @apply border-3 border-white shadow-2xl shadow-blue-500/75 scale-115;
+}
+
+#shortcut:hover .shortcut-text {
+    @apply opacity-100;
+}
