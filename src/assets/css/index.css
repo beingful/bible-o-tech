@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+    @apply min-h-screen overflow-auto bg-[radial-gradient(at_50%_50%,_theme('colors.slate.300'),_theme('colors.slate.600'))];
+}
+
+#app {
+    @apply h-dvh w-full;
+}

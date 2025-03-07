@@ -4,9 +4,9 @@
     import { Image } from '@/assets/ts/image';
     
     const shortcuts: Shortcut[] = [
-        new Shortcut('Owner', '/owner', new Image('owner.jpg', 'owner.jpg')),
+        new Shortcut('Owner', '/owner', new Image('owner-cropped.jpg', 'owner.jpg')),
         new Shortcut('Portfolio', '/portfolio', new Image('almost-github-logo.jpg', 'portfolio.jpg')),
-        new Shortcut('Shared knowledge', '/library', new Image('digital-library-square.png', 'shared-knowledge.jpg'))
+        new Shortcut('Shared knowledge', '/library', new Image('digital-library-cropped.png', 'shared-knowledge.jpg'))
     ];
 </script>
 

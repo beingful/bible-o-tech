@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 .app-container {
-    @apply grid h-full w-full bg-[radial-gradient(at_50%_50%,_theme('colors.slate.300'),_theme('colors.slate.600'))];
+    @apply grid h-full w-full overflow-auto;
 }

@@ -16,7 +16,7 @@
     <div id="shortcut">
         <RouterLink :to="shortcut.destination">
             <button class="shortcut-button shortcut-transition" @click="router.push('/portfolio')">
-                <img class="rounded-full" :src="shortcut.image.path" :alt="shortcut.image.alt">
+                <img class="object-cover rounded-full" :src="shortcut.image.path" :alt="shortcut.image.alt">
             </button>
         </RouterLink>
         <p class="shortcut-text shortcut-transition">
