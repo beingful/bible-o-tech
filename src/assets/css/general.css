@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.full-size {
+    @apply h-full w-full;
+}

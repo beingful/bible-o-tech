@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+:deep(.carousel) {
+    @apply font-mono text-sm text-slate-300;
+}
+
+:deep(.carousel-slide) {
+    @apply h-5/8 w-1/2 rounded-xl bg-white/25 border border-1 border-white shadow-2xl shadow-slate-600;
+}
+
+:deep(.bottomup-enter-active), :deep(.topdown-enter-active) {
+    @apply transform transition-all ease-in-out duration-700;
+}
+
+:deep(.bottomup-leave-active), :deep(.topdown-leave-active) {
+    @apply transition-all ease-in-out duration-100 delay-500;
+}
+
+:deep(.bottomup-enter-from) {
+    @apply translate-y-full;
+}
+
+:deep(.topdown-enter-from) {
+    @apply -translate-y-full;
+}
+
+:deep(.bottomup-enter-to), :deep(.topdown-enter-to) {
+    @apply translate-y-0;
+}
+
+:deep(.bottomup-enter-from), :deep(.bottomup-leave-to),
+:deep(.topdown-enter-from), :deep(.topdown-leave-to) {
+    @apply opacity-0;
+}
+
+:deep(.bottomup-enter-to), :deep(.bottomup-leave-from),
+:deep(.topdown-enter-to), :deep(.topdown-leave-from) {
+    @apply opacity-100;
+}

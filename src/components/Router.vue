@@ -16,6 +16,6 @@
     </nav>
 </template>
 
-<style lang="css">
+<style lang="css" scoped>
     @import "@/assets/css/router.css";
 </style>

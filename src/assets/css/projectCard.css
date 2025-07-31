@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+:deep(.observable-entry-container) {
+    @apply flex h-screen items-center justify-center;
+}
+
+:deep(.transition-entry-container) {
+    @apply flex h-screen items-center justify-center;
+}
+
+:deep(.card-container) {
+    @apply h-full w-full;
+}
+
+:deep(.card-title) {
+    @apply text-3xl font-bold;
+}
+
+:deep(.card-text) {
+    @apply text-gray-300;
+}

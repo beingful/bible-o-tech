@@ -1,14 +1,13 @@
 <script setup lang="ts">
-  import MainMenu from '@/components/Router.vue';
-  import { useRoute, useRouter } from 'vue-router'
-
-  const router = useRouter();
-  const route = useRoute();
-
-  let hasRoute = router.hasRoute('portfolio');
+  import ProjectHub from '@/components/ProjectHub.vue';
 </script>
 
 <template>
-    <div class="grid grid-flow-col grid-cols-2 bg-slate-900 h-100 w-100 self-place-center place-self-center">
-    </div>
+  <div class="project-gallery" :style="{ backgroundAttachment: 'local' }">
+    <ProjectHub class="full-size"></ProjectHub>
+  </div>
 </template>
+
+<style lang="css" scoped>
+  @import "@/assets/css/portfolio.css";
+</style>

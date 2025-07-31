@@ -16,7 +16,7 @@
     <div id="shortcut">
         <RouterLink :to="shortcut.destination">
             <button class="shortcut-button shortcut-transition" @click="router.push('/portfolio')">
-                <img class="object-cover rounded-full" :src="shortcut.image.path" :alt="shortcut.image.alt">
+                <img class="shortcut-image" :src="shortcut.image.path" :alt="shortcut.image.alt">
             </button>
         </RouterLink>
         <p class="shortcut-text shortcut-transition">
@@ -24,3 +24,7 @@
         </p>
     </div>
 </template>
+
+<style lang="css">
+    @import "@/assets/css/shortcut.css";
+</style>

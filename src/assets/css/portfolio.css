@@ -1,0 +1,15 @@
+@reference "tailwindcss";
+
+.project-gallery {
+    @apply grid h-full w-full place-items-center overflow-auto
+        bg-linear-to-b from-slate-400 to-slate-800 bg-no-repeat;
+}
+
+.project-gallery {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.project-gallery::-webkit-scrollbar {
+    display: none;
+}
