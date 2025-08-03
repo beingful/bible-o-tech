@@ -12,11 +12,7 @@
 
 <template>
     <div class="card-container">
-        <h3 class="card-title">
-            {{ infoCard.title }}
-        </h3>
-        <p class="card-text">
-            {{ infoCard.text }}
-        </p>
+        <p class="card-title"> {{ infoCard.title }} </p>
+        <div class="card-text"> {{ infoCard.text }} </div>
     </div>
 </template>

@@ -1,11 +1,8 @@
 @reference "tailwindcss";
 
-:deep(.carousel) {
-    @apply font-mono text-sm text-slate-300;
-}
-
 :deep(.carousel-slide) {
-    @apply h-5/8 w-1/2 rounded-xl bg-white/25 border border-1 border-white shadow-2xl shadow-slate-600;
+    @apply max-h-5/8 max-w-1/2 rounded-xl bg-slate-900/25 border border-1 border-white
+        shadow-2xl shadow-slate-600 font-mono text-slate-300 text-justify;
 }
 
 :deep(.bottomup-enter-active), :deep(.topdown-enter-active) {

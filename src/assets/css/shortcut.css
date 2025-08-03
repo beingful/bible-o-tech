@@ -1,9 +1,5 @@
 @reference "tailwindcss";
 
-@theme {
-    --breakpoint-2xl: 100rem;
-}
-
 #shortcut {
     @apply grid h-full w-full gap-5 rounded-xl place-items-center md:gap-10;
 }

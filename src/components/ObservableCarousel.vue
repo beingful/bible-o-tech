@@ -18,7 +18,7 @@
 
     onMounted(() => {
         observer = new ElementObserver(carouselReactive.value, {
-            threshold: 0.9
+            threshold: 0.75
         });
 
         observer.startObserving(carouselElement.value!);
@@ -30,7 +30,7 @@
 </script>
 
 <template>
-    <div :ref="carousel.id" class="full-size carousel">
+    <div :ref="carousel.id" class="carousel full-size">
         <ObservableCarouselSlide v-for="(observableEntry) in carousel.entries" :key="observableEntry.id" :carouselSlide="observableEntry" />
     </div>
 </template>

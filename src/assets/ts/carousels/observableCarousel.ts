@@ -23,6 +23,10 @@ export class ObservableCarousel extends Carousel implements IObservableRoot {
         return this._slides;
     }
 
+    public get current(): ObservableCarouselSlide {
+        return this._slides[this.currentSlide.order];
+    }
+
     public watch(slideId: string): void {
         const slideNumber: number = parseInt(slideId);
 
@@ -31,16 +35,12 @@ export class ObservableCarousel extends Carousel implements IObservableRoot {
         } else if (slideNumber < this.currentSlide.order) {
             this.slideBackwardTo(slideNumber)
         }
-
-        this._transition.apply(this);
-
-        this._slides[this.lastSlide.order].unwatch();
-        this._slides[this.currentSlide.order].watch();
     }
 
     private slideForwardTo(targetSlide: number): void {
         while (this.canSlideForwardTo(targetSlide)) {
             this.goToNext();
+            this.slide();
         }
     }
 
@@ -51,10 +51,18 @@ export class ObservableCarousel extends Carousel implements IObservableRoot {
     private slideBackwardTo(targetSlide: number): void {
         while (this.canSlideBackwardTo(targetSlide)) {
             this.goToPrevious();
+            this.slide();
         }
     }
 
     private canSlideBackwardTo(targetSlide: number) {
         return this.currentSlide.order != targetSlide && this.canGoToPrevious();
+    }
+
+    private slide(): void {
+        this._transition.apply(this);
+
+        this._slides[this.lastSlide.order].unwatch();
+        this._slides[this.currentSlide.order].watch();
     }
 }

@@ -6,7 +6,6 @@ export class ElementObserver {
 
     constructor(observable: IObservableRoot, options: IntersectionObserverInit) {
         this._observable = observable;
-        options.root = null;
         this._intersectionObserver = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

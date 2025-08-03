@@ -6,21 +6,16 @@ import { ObservableCarouselSlide } from "./observableCarouselSlide";
 import { CarouselSlideBottomUp } from "./carouselSlideBottomUp";
 import { CarouselSlideTopDown } from "./carouselSlideTopDown";
 import { CarouselSlideTransition } from "./carouselSlideTransition";
+import { projects } from '../../files/json/projects.json';
 
 export class ProjectsCarousel extends ObservableCarousel {
     constructor() {
-        const projects: InfoCard[] = [
-            new InfoCard("Title 1", "Text 1"),
-            new InfoCard("Title 2", "Text 2"),
-            new InfoCard("Title 3", "Text 3"),
-            new InfoCard("Title 4", "Text 4"),
-            new InfoCard("Title 5", "Text 5")
-        ];
+        const projectCards: InfoCard[] = projects as InfoCard[];
 
         const projectSlides: CarouselSlide[] = [];
 
-        projects.forEach((project, orderNumber) => {
-            projectSlides.push(new CarouselSlide(orderNumber, project));
+        projectCards.forEach((projectCard, orderNumber) => {
+            projectSlides.push(new CarouselSlide(orderNumber, projectCard));
         });
 
         const carouselTransition = new CarouselTransition(
