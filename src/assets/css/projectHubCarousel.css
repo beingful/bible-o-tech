@@ -2,7 +2,20 @@
 
 :deep(.carousel-slide) {
     @apply max-h-5/8 max-w-1/2 rounded-xl bg-slate-900/25 border border-1 border-white
-        shadow-2xl shadow-slate-600 font-mono text-slate-300 text-justify;
+        shadow-2xl shadow-slate-600 font-mono text-slate-300 text-justify overflow-auto;
+}
+
+:deep(.carousel-slide) {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+:deep(.carousel-slide)::-webkit-scrollbar {
+    display: none;
+}
+
+:deep(.transition-entry-container) {
+    @apply flex items-center justify-center;
 }
 
 :deep(.bottomup-enter-active), :deep(.topdown-enter-active) {

@@ -2,19 +2,31 @@
     "projects": [
         {
             "title": "Unity publisher tool",
-            "text": "A single-user web app, based on ASP.NET Web API, which is a service for a Unity asset store publisher. It is built using DDD software design approach and featured with packages like Hangfire, Hangfire for Redis, MailKit, HtmlAgilityPack, Autofac etc. The app is distributed across two servers: the web app, represented by the ASP.NET service hosted via Azure Web App, and Redis server, hosted via Azure Container App."
+            "text": "A single-user web app, based on ASP.NET Web API, which is a service for a Unity asset store publisher. It is built using DDD software design approach and featured with packages like Hangfire, Hangfire for Redis, MailKit, HtmlAgilityPack, Autofac etc. The app is distributed across two servers: the web app, represented by the ASP.NET service hosted via Azure Web App, and Redis server, hosted via Azure Container App.",
+            "images": [
+                "projects\\unity-publisher-tool\\profile-image-squared.png"
+            ]
         },
         {
             "title": "Bloom effect photo editor",
-            "text": "A multi-user web application, based on ASP.NET MVC, designed to apply a bloom effect to an uploaded image. Uses Gaussian blur, Gaussian threshold, and image sampling as an optimization technique. Hosted via Azure Web App service."
+            "text": "A multi-user web application, based on ASP.NET MVC, designed to apply a bloom effect to an uploaded image. Uses Gaussian blur, Gaussian threshold, and image sampling as an optimization technique. Hosted via Azure Web App service.",
+            "images": [
+                "projects\\unity-publisher-tool\\profile-image-squared.png"
+            ]
         },
         {
             "title": "Dating app simulator",
-            "text": "A web application, based on Flutter, designed to simulate a dating app selection process. It’s featured with Geolocation and Google Maps support, connected to a Firebase Realtime Database, and deployed with Firebase Hosting service."
+            "text": "A web application, based on Flutter, designed to simulate a dating app selection process. It’s featured with Geolocation and Google Maps support, connected to a Firebase Realtime Database, and deployed with Firebase Hosting service.",
+            "images": [
+                "projects\\unity-publisher-tool\\profile-image-squared.png"
+            ]
         },
         {
             "title": "Spam filter app",
-            "text": "A desktop application, based on WPF, designed to recognize spam messages. Uses Naїve Bayes classifier. Training data is stored in an MS SQL database."
+            "text": "A desktop application, based on WPF, designed to recognize spam messages. Uses Naїve Bayes classifier. Training data is stored in an MS SQL database.",
+            "images": [
+                "projects\\unity-publisher-tool\\profile-image-squared.png"
+            ]
         }
     ]
 }

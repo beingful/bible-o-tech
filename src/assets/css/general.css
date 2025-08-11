@@ -3,3 +3,11 @@
 .full-size {
     @apply h-full w-full;
 }
+
+.link {
+    @apply text-[#4493f8] font-semibold;
+}
+
+.link:hover {
+    @apply underline cursor-pointer;
+}

@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <ObservableCarousel :carousel="projectCarousel" />
+    <ObservableCarousel class="col-span-3" :carousel="projectCarousel" />
 </template>
 
 <style lang="css" scoped>

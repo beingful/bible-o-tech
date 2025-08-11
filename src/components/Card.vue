@@ -11,8 +11,11 @@
 </script>
 
 <template>
-    <div class="card-container">
-        <p class="card-title"> {{ infoCard.title }} </p>
+    <div class="h-full w-full flex flex-col flex-shrink items-center p-5 space-y-5">
+        <div class="flex flex-row flex-shrink h-[3rem] space-x-5">
+            <img class="h-full object-contain rounded-full" :src="infoCard.gallery![0].path" :alt="infoCard.gallery![0].alt">
+            <p class="card-title content-center"> {{ infoCard.title }} </p>
+        </div>
         <div class="card-text"> {{ infoCard.text }} </div>
     </div>
 </template>

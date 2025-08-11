@@ -7,10 +7,21 @@ import { CarouselSlideBottomUp } from "./carouselSlideBottomUp";
 import { CarouselSlideTopDown } from "./carouselSlideTopDown";
 import { CarouselSlideTransition } from "./carouselSlideTransition";
 import { projects } from '../../files/json/projects.json';
+import { Image } from "../image"
 
 export class ProjectsCarousel extends ObservableCarousel {
     constructor() {
-        const projectCards: InfoCard[] = projects as InfoCard[];
+        const projectCards: InfoCard[] = new Array<InfoCard>(projects.length);
+
+        projects.forEach((project, index)  => {
+            const gallery: Image[] = new Array<Image>(project.images.length);
+
+            project.images.forEach((imagePath, index) => {
+                gallery[index] = new Image(imagePath)
+            });
+
+            projectCards[index] = new InfoCard(project.title, project.text, gallery);
+        });
 
         const projectSlides: CarouselSlide[] = [];
 
