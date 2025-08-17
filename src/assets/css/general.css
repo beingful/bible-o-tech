@@ -1,5 +1,20 @@
 @reference "tailwindcss";
 
+:root {
+    --bg-color-main: #0d1117;
+    --border-color-main: #3d444d;
+    --text-color-muted: #9198a1;
+    --button-color-muted: #212830;
+    --button-color-hovered: #2a313c;
+    --contribution-color-level-0: #151b23;
+    --contribution-color-level-1: #033a16;
+    --contribution-color-level-2: #196c2e;
+    --contribution-color-level-3: #2ea043;
+    --contribution-color-level-4:  #56d364;
+    --language-color-c-sharp: #178600;
+    --language-color-dart: #00B4AB;
+}
+
 .full-size {
     @apply h-full w-full;
 }
@@ -10,4 +25,26 @@
 
 .link:hover {
     @apply underline cursor-pointer;
+}
+
+.button-link:hover {
+    @apply cursor-pointer;
+}
+
+.scroll-mini-default::-webkit-scrollbar {
+    @apply w-1 h-1;
+}
+
+.scroll-default::-webkit-scrollbar-track,
+.scroll-mini-default::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.scroll-default::-webkit-scrollbar-thumb,
+.scroll-mini-default::-webkit-scrollbar-thumb {
+    @apply bg-gray-300/20;
+}
+
+.scroll-mini-default:hover {
+    @apply overflow-auto;
 }

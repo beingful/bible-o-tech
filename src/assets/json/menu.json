@@ -1,0 +1,27 @@
+{
+    "menu": {
+        "shortcuts": [
+            {
+                "name": "Owner",
+                "destination": "/owner",
+                "image": {
+                    "fileName": "owner-cropped.jpg"
+                }
+            },
+            {
+                "name": "Portfolio",
+                "destination": "/portfolio",
+                "image": {
+                    "fileName": "almost-github-logo.jpg"
+                }
+            },
+            {
+                "name": "Library",
+                "destination": "/library",
+                "image": {
+                    "fileName": "digital-library-cropped.png"
+                }
+            }
+        ]
+    }
+}

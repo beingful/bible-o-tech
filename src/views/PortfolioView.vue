@@ -1,22 +1,37 @@
 <script setup lang="ts">
-  import GitHub from '@/components/GitHub.vue';
-  import ProjectHub from '@/components/ProjectHub.vue';
+    import { GitHubAccount } from '@/assets/ts/portfolio/gitHubAccount';
+    import Repository from '@/components/Portfolio/Repository.vue';
+    import Profile from '@/components/Portfolio/Profile.vue';
+    import ContributionCalendar from '@/components/Portfolio/ContributionCalendar.vue';
+
+    const account = new GitHubAccount();
+
+    const contributionBackground = Array<string>(5);
+
+    for (let i = 0; i < contributionBackground.length; i++) {
+      contributionBackground[i] = `--contribution-color-level-${i}`;
+    }
+
+    const languageBackground: { [id: string] : string; } = {
+      'C#': '--language-color-c-sharp',
+      'Dart': '--language-color-dart'
+    };
 </script>
 
 <template>
-  <!--
-  <div class="project-gallery grid grid-cols-4" :style="{ backgroundAttachment: 'local' }">
-    <div class="h-full m-5 col-span-1 border border-1 border-white rounded-lg">
-        <img class="p-2 object-contain rounded-full" src="http://localhost:8080/src/assets/images/projects/unity-publisher-tool/profile-image-squared.png"></img>
+    <div id="portfolio" class="p-5 max-w-[1280px] min-w-[300px]">
+        <Profile :profile="account.profile" />
+        <div id="repositories">
+            <Repository :language-background="languageBackground"
+              v-for="(repository, index) in account.repositories"
+              :key="index" :repository="repository" />
+        </div>
+        <ContributionCalendar
+          :contribution-calendar="account.contributionCalendar"
+          :contribution-background="contributionBackground" />
     </div>
-    <div class="flex flex-col items-center justify-center col-span-3">
-      <ProjectHub class="full-size"></ProjectHub>
-    </div>
-  </div>
-  -->
-  <GitHub class="p-5"/>
 </template>
 
 <style lang="css" scoped>
-  @import "@/assets/css/portfolio.css";
+    @import "@/assets/css/portfolio/gitHub.css";
 </style>

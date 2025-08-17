@@ -1,9 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="grid h-full w-full">
     <RouterView/>
   </div>
 </template>
-
-<style lang="css" scoped>
-    @import "@/assets/css/app.css";
-</style>

@@ -1,0 +1,69 @@
+@reference "tailwindcss";
+
+:deep(.border-default) {
+    @apply border border-[1.5] border-(--border-color-main);
+}
+
+#portfolio {
+    @apply grid grid-cols-4 bg-(--bg-color-main) md:gap-x-5 gap-y-5 overflow-auto;
+}
+
+#repositories {
+    @apply grid grid-cols-2 grid-rows-2 md:col-span-3 col-span-4;
+}
+
+:deep(#profile) {
+    @apply flex flex-col md:col-span-1 col-span-4;
+}
+
+:deep(#profile-name) {
+    @apply text-2xl text-white font-sans font-semibold;
+}
+
+:deep(#profile-id) {
+    @apply text-base text-(--text-color-muted) font-mono font-light;
+}
+
+:deep(#follow) {
+    @apply bg-(--button-color-muted) rounded-sm text-sm text-white font-semibold;
+}
+
+:deep(#follow:hover) {
+    @apply bg-(--button-color-hovered);
+}
+
+:deep(.repository) {
+    @apply sm:col-span-1 col-span-3;
+}
+
+:deep(.public-lable) {
+    @apply rounded-lg text-xs text-(--text-color-muted) font-medium;
+}
+
+:deep(.repository-description) {
+    @apply text-sm text-(--text-color-muted);
+}
+
+:deep(.repository-summary) {
+    @apply flex space-x-1 text-sm text-(--text-color-muted);
+}
+
+:deep(#contributions) {
+    @apply flex flex-col space-y-2 md:col-span-3 md:col-start-2 col-span-4;
+}
+
+:deep(#contribution-calendar) {
+    @apply grid grid-cols-55 grid-rows-9 text-xs text-white;
+}
+
+:deep(#contribution-months) {
+    @apply grid grid-rows-3 row-span-7 row-start-3 col-span-2;
+}
+
+:deep(#contribution-days-of-week) {
+    @apply grid grid-cols-12 row-span-2 col-span-53 col-start-3;
+}
+
+:deep(#activity) {
+    @apply grid grid-flow-col grid-cols-53 grid-rows-7 col-span-53 col-start-3 row-span-7 row-start-3 gap-x-1 gap-y-1;
+}
