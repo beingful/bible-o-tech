@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 body {
-    @apply min-h-screen overflow-auto bg-(--bg-color-main);
+    @apply overflow-auto bg-(--bg-color-main);
 }
 
 #app {
-    @apply h-dvh w-full;
+    @apply h-dvh min-h-max w-full overflow-auto;
 }

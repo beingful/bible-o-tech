@@ -4,26 +4,15 @@
     @apply grid gap-y-10 md:w-full w-1/2 rounded-xl place-items-center md:gap-y-10;
 }
 
-.shortcut-transition {
-    @apply transition duration-500 ease-out;
+.shortcut-name {
+    @apply text-2xl text-center font-semibold text-slate-600 font-mono
+        uppercase md:text-xl transition duration-500 ease-out;
 }
 
 .shortcut-button {
-    @apply border border-slate-600 rounded-full shadow-xl shadow-slate-600;
+    @apply border-1 border-slate-600 shadow-[0_0_30px] shadow-slate-600 transition duration-500 ease-out;
 }
 
-.shortcut-image {
-    @apply object-cover rounded-full;
-}
-
-.shortcut-name {
-    @apply text-2xl text-center font-semibold text-slate-600 font-mono uppercase md:text-xl opacity-0;
-}
-
-.shortcut:hover .shortcut-button {
-    @apply border-3 border-white shadow-2xl shadow-blue-500 scale-115 cursor-pointer;
-}
-
-.shortcut:hover .shortcut-name {
-    @apply opacity-100;
+.shortcut-button:hover {
+    @apply border-3 border-white shadow-[0_0_50px] shadow-blue-500 scale-115 cursor-pointer;
 }

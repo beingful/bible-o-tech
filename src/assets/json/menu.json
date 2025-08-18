@@ -4,23 +4,17 @@
             {
                 "name": "Owner",
                 "destination": "/owner",
-                "image": {
-                    "fileName": "owner-cropped.jpg"
-                }
+                "image": "/home/shortcuts/owner.jpg"
             },
             {
                 "name": "Portfolio",
                 "destination": "/portfolio",
-                "image": {
-                    "fileName": "almost-github-logo.jpg"
-                }
+                "image": "/home/shortcuts/portfolio.jpg"
             },
             {
-                "name": "Library",
+                "name": "Knowledge Hub",
                 "destination": "/library",
-                "image": {
-                    "fileName": "digital-library-cropped.png"
-                }
+                "image": "/home/shortcuts/knowledge-hub.png"
             }
         ]
     }

@@ -6,7 +6,7 @@
     
     const shortcuts: Shortcut[] = menu.shortcuts.map(shortcut => {
         return new Shortcut(shortcut.name, shortcut.destination,
-            new Image(shortcut.image.fileName));
+            new Image(shortcut.image));
     });
 </script>
 

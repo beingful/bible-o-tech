@@ -1,8 +1,7 @@
 <script setup lang="ts">
-    import { type PropType } from 'vue';
-    import { Shortcut } from '@/assets/ts/home/shortcut';
+    import { ref, type PropType } from 'vue';
     import { RouterLink } from 'vue-router';
-    import router from '@/router';
+    import { Shortcut } from '@/assets/ts/home/shortcut';
 
     defineProps({
         shortcut: {
@@ -10,16 +9,26 @@
             required: true
         }
     });
+
+    let shortcutNameVisible = ref(false);
+
+    const changeShortcutNameVisibility = (value: boolean) => {
+        shortcutNameVisible.value = value;
+    }
 </script>
 
 <template>
     <div class="shortcut min-w-[200px]">
         <RouterLink :to="shortcut.destination">
-            <button class="shortcut-button shortcut-transition" @click="router.push('/portfolio')">
-                <img class="shortcut-image" :src="shortcut.image.path" :alt="shortcut.image.alt">
+            <button class="accent-large rounded-full"
+                @mouseover="changeShortcutNameVisibility(true)"
+                @mouseleave="changeShortcutNameVisibility(false)">
+                <img class="object-cover rounded-full" :src="shortcut.image.path" :alt="shortcut.image.alt">
             </button>
         </RouterLink>
-        <p class="shortcut-name shortcut-transition"> {{ shortcut.name }} </p>
+        <p :class="['shortcut-name', 'transition-default', shortcutNameVisible ? 'opacity-100' : 'opacity-0']">
+            {{ shortcut.name }}
+        </p>
     </div>
 </template>
 

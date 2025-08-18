@@ -20,7 +20,7 @@ export class FileExplorer {
     }
 
     public getPath(fileName: string): string {
-        return this._currentPath + this._separator + fileName;
+        return this._currentPath + fileName;
     }
 
     public static Directories = class {
