@@ -22,7 +22,7 @@
             contributions in the last year
         </h4>
         <div class="p-5 border-default rounded-t-lg">
-            <div class="h-max w-full overflow-hidden scroll-mini-default">
+            <div class="overflow-auto">
                 <div id="contribution-calendar" class="h-[135px] w-[830px] min-w-full">
                     <div id="contribution-months">
                         <p class="self-center" v-for="dayOfWeek in contributionCalendar.daysOfWeek" :key="dayOfWeek">{{ dayOfWeek }}</p>

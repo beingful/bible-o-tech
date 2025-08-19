@@ -31,28 +31,15 @@
     @apply cursor-pointer;
 }
 
-.scroll-mini-default::-webkit-scrollbar {
-    @apply w-1 h-1;
-}
-
-.scroll-default::-webkit-scrollbar-track,
-.scroll-mini-default::-webkit-scrollbar-track {
-    @apply bg-transparent;
-}
-
-.scroll-default::-webkit-scrollbar-thumb,
-.scroll-mini-default::-webkit-scrollbar-thumb {
-    @apply bg-gray-300/20;
-}
-
-.scroll-mini-default:hover {
-    @apply overflow-auto;
-}
-
 .accent-large {
     @apply border-1 border-slate-600 shadow-[0_0_30px] shadow-slate-600 transition duration-500 ease-out;
 }
 
 .accent-large:hover {
     @apply border-3 border-white shadow-[0_0_50px] shadow-blue-500 scale-115 cursor-pointer;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color-main) transparent;
 }
