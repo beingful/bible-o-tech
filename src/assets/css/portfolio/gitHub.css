@@ -1,11 +1,26 @@
 @reference "tailwindcss";
 
+div {
+    --portfolio-bg-color-main: #0d1117;
+    --portfolio-border-color-main: #3d444d;
+    --portfolio-text-color-muted: #9198a1;
+    --portfolio-button-color-muted: #212830;
+    --portfolio-color-hovered: #2a313c;
+    --contribution-color-level-0: #151b23;
+    --contribution-color-level-1: #033a16;
+    --contribution-color-level-2: #196c2e;
+    --contribution-color-level-3: #2ea043;
+    --contribution-color-level-4:  #56d364;
+    --language-color-c-sharp: #178600;
+    --language-color-dart: #00B4AB;
+}
+
 :deep(.border-default) {
-    @apply border border-[1.5] border-(--border-color-main);
+    @apply border border-[1.5] border-(--portfolio-border-color-main);
 }
 
 #portfolio {
-    @apply grid grid-cols-4 bg-(--bg-color-main) md:gap-x-5 gap-y-5 overflow-auto;
+    @apply grid grid-cols-4 bg-(--portfolio-bg-color-main) md:gap-x-5 gap-y-5 overflow-auto;
 }
 
 #repositories {
@@ -21,15 +36,15 @@
 }
 
 :deep(#profile-id) {
-    @apply text-base text-(--text-color-muted) font-mono font-light;
+    @apply text-base text-(--portfolio-text-color-muted) font-mono font-light;
 }
 
 :deep(#follow) {
-    @apply bg-(--button-color-muted) rounded-sm text-sm text-white font-semibold;
+    @apply bg-(--portfolio-button-color-muted) rounded-sm text-sm text-white font-semibold;
 }
 
 :deep(#follow:hover) {
-    @apply bg-(--button-color-hovered);
+    @apply bg-(--portfolio-color-hovered);
 }
 
 :deep(.repository) {
@@ -37,15 +52,15 @@
 }
 
 :deep(.public-lable) {
-    @apply rounded-lg text-xs text-(--text-color-muted) font-medium;
+    @apply rounded-lg text-xs text-(--portfolio-text-color-muted) font-medium;
 }
 
 :deep(.repository-description) {
-    @apply text-sm text-(--text-color-muted);
+    @apply text-sm text-(--portfolio-text-color-muted);
 }
 
 :deep(.repository-summary) {
-    @apply flex space-x-1 text-sm text-(--text-color-muted);
+    @apply flex space-x-1 text-sm text-(--portfolio-text-color-muted);
 }
 
 :deep(#contributions) {

@@ -2,17 +2,7 @@
 
 :root {
     --bg-color-main: #0d1117;
-    --border-color-main: #3d444d;
-    --text-color-muted: #9198a1;
-    --button-color-muted: #212830;
-    --button-color-hovered: #2a313c;
-    --contribution-color-level-0: #151b23;
-    --contribution-color-level-1: #033a16;
-    --contribution-color-level-2: #196c2e;
-    --contribution-color-level-3: #2ea043;
-    --contribution-color-level-4:  #56d364;
-    --language-color-c-sharp: #178600;
-    --language-color-dart: #00B4AB;
+    --bg-color-muted: #3d444d;
 }
 
 .full-size {
@@ -41,5 +31,5 @@
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: var(--border-color-main) transparent;
+    scrollbar-color: var(--bg-color-muted) transparent;
 }
