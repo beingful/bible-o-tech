@@ -2,8 +2,8 @@
     "menu": {
         "shortcuts": [
             {
-                "name": "Owner",
-                "destination": "/owner",
+                "name": "About",
+                "destination": "/about",
                 "image": "/home/shortcuts/owner.jpg"
             },
             {

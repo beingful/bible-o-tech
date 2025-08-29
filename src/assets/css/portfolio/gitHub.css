@@ -1,8 +1,6 @@
 @reference "tailwindcss";
 
 div {
-    --portfolio-bg-color-main: #0d1117;
-    --portfolio-border-color-main: #3d444d;
     --portfolio-text-color-muted: #9198a1;
     --portfolio-button-color-muted: #212830;
     --portfolio-color-hovered: #2a313c;
@@ -16,11 +14,11 @@ div {
 }
 
 :deep(.border-default) {
-    @apply border border-[1.5] border-(--portfolio-border-color-main);
+    @apply border border-[1.5] border-(--color-muted);
 }
 
 #portfolio {
-    @apply grid grid-cols-4 bg-(--portfolio-bg-color-main) md:gap-x-5 gap-y-5 overflow-auto;
+    @apply grid grid-cols-4 bg-(--color-main) md:gap-x-5 gap-y-5 overflow-auto;
 }
 
 #repositories {
