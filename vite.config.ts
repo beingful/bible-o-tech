@@ -5,9 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production'
-    ? '/bible-o-tech/'
-    : '/',
+  base: '/bible-o-tech/',
   plugins: [
     vue(),
     vueDevTools(),
