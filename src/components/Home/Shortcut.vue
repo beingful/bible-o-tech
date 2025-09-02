@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <div class="shortcut min-w-[200px]">
+    <div class="shortcut min-w-[150px]">
         <RouterLink :to="shortcut.destination">
             <button class="accent-large rounded-full"
                 @mouseover="changeShortcutNameVisibility(true)"
@@ -26,7 +26,7 @@
                 <img class="object-cover rounded-full" :src="shortcut.image.path" :alt="shortcut.image.alt">
             </button>
         </RouterLink>
-        <p :class="['shortcut-name', 'transition-default', shortcutNameVisible ? 'opacity-100' : 'opacity-0']">
+        <p :class="['shortcut-name', shortcutNameVisible ? 'opacity-100' : 'xl:opacity-0']">
             {{ shortcut.name }}
         </p>
     </div>

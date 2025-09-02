@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 #main-menu {
-    @apply grid md:grid-rows-1 grid-rows-3 md:grid-cols-3 gap-20 place-self-center place-items-center;
+    @apply grid md:grid-rows-1 grid-rows-3 md:grid-cols-3 gap-y-10 md:gap-x-20 place-self-center place-items-center;
 }
