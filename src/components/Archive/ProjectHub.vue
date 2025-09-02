@@ -2,11 +2,13 @@
     import { ProjectsCarousel } from '@/assets/ts/archive/carousels/projectsCarousel';
     import ObservableCarousel from './ObservableCarousel.vue';
 
-    const projectCarousel: ProjectsCarousel = new ProjectsCarousel();
+    //const projectCarousel: ProjectsCarousel = new ProjectsCarousel();
 </script>
 
 <template>
+    <!--
     <ObservableCarousel class="col-span-3" :carousel="projectCarousel" />
+    -->
 </template>
 
 <style lang="css" scoped>

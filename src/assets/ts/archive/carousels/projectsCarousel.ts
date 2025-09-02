@@ -6,14 +6,14 @@ import { ObservableCarouselSlide } from "./observableCarouselSlide";
 import { CarouselSlideBottomUp } from "./carouselSlideBottomUp";
 import { CarouselSlideTopDown } from "./carouselSlideTopDown";
 import { CarouselSlideTransition } from "./carouselSlideTransition";
-import { projects } from '../../files/json/projects.json';
+//import { gitHubAccount } from '../../files/json/portfolio/gitHubAccount.json';
 import { Image } from "../../image"
 
 export class ProjectsCarousel extends ObservableCarousel {
-    constructor() {
-        const projectCards: InfoCard[] = new Array<InfoCard>(projects.length);
+    /*constructor() {
+        const projectCards: InfoCard[] = new Array<InfoCard>(gitHubAccount.length);
 
-        projects.forEach((project, index)  => {
+        gitHubAccount.forEach((gitHubAccount., index)  => {
             const gallery: Image[] = new Array<Image>(project.images.length);
 
             project.images.forEach((imagePath, index) => {
@@ -45,6 +45,6 @@ export class ProjectsCarousel extends ObservableCarousel {
                 slide.order == 0));
         });
 
-        super("projects-carousel", observableSlides, carouselTransition);
-    }
+        //super("projects-carousel", [], carouselTransition);
+    }*/
 }
