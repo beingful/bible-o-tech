@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
     import { GitHubAccount } from '@/assets/ts/portfolio/gitHubAccount';
     import Repository from '@/components/Portfolio/Repository.vue';
     import Profile from '@/components/Portfolio/Profile.vue';

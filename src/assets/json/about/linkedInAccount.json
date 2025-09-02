@@ -1,0 +1,151 @@
+{
+    "linkedInAccount": {
+        "website": {
+            "url": "https://www.linkedin.com/in/hanna-kasai-a89864212",
+            "wallpaper": "/about/bio/wallpaper.jfif"
+        },
+        "candidacy": {
+            "name": "Hanna Kasai",
+            "position": "Software Developer",
+            "bio": "Backend Engineer",
+            "picture": "/about/bio/profile-picture.jfif"
+        },
+        "location": {
+            "country": "United States",
+            "city": "San Francisco",
+            "state": "California"
+        },
+        "contactMethods": [
+            {
+                "name": "Phone",
+                "detail": "+1(628)297-5201",
+                "icon": "/about/contact/phone.png"
+            },
+            {
+                "name": "Email",
+                "detail": "hanna.kasai002@gmail.com",
+                "icon": "/about/contact/email.png"
+            }
+        ],
+        "education": [
+            {
+                "establishment": "Taras Shevchenko National University of Kyiv",
+                "major": "Applied Mathematics",
+                "degree": "Master's degree",
+                "startDate": "09-01-2018",
+                "endDate": "06-30-2022",
+                "icon": "/about/education/university.jfif"
+            },
+            {
+                "establishment": "Taras Shevchenko National University of Kyiv",
+                "major": "Applied Mathematics",
+                "degree": "Bachelor's degree",
+                "startDate": "09-01-2022",
+                "endDate": "06-30-2024",
+                "icon": "/about/education/university.jfif"
+            }
+        ],
+        "experience": [
+            {
+                "company": "Banyan Technology",
+                "position": "Software Developer",
+                "employmentType": "Full-time",
+                "site": "Hybrid",
+                "responsibilities": [
+                    "Contribution to development of B2B solutions.",
+                    "Full-stack development.",
+                    "Communication with clients when needed."
+                ],
+                "startDate": "04-01-2025",
+                "icon": "/about/experience/banyan.jfif"
+            },
+            {
+                "company": "Itera",
+                "position": "Backend Developer",
+                "employmentType": "Full-time",
+                "site": "Remote",
+                "responsibilities": [
+                    "System design.",
+                    "Developent of new services from scratch.",
+                    "Development of new services in C#, based on legacy C++ solutions.",
+                    "Coordinated a major performance improvement initiative.",
+                    "Was one responsible for automated testing.",
+                    "Managed documentation. Consolidated business requirements, translated them into technical requirements.",
+                    "Effectively communicated with customers, and provided suggestions for improving new and existing solutions."
+                ],
+                "startDate": "09-01-2022",
+                "endDate": "05-31-2024",
+                "icon": "/about/experience/itera.jfif"
+            },
+            {
+                "company": "Banza",
+                "position": "Full-stack Developer",
+                "employmentType": "Full-time",
+                "site": "On-site",
+                "responsibilities": [
+                    "System design.",
+                    "Developent of new services from scratch.",
+                    "Development of new services in C#, based on legacy C++ solutions.",
+                    "Coordinated a major performance improvement initiative.",
+                    "Was one responsible for automated testing.",
+                    "Managed documentation. Consolidated business requirements, translated them into technical requirements.",
+                    "Effectively communicated with customers, and provided suggestions for improving new and existing solutions."
+                ],
+                "startDate": "05-01-2021",
+                "endDate": "04-30-2022",
+                "icon": "/about/experience/banza.jfif"
+            }
+        ],
+        "skills": [
+            {
+                "category": "Development",
+                "technologies": ["Backend", "Full-stack"]
+            },
+            {
+                "category": "System",
+                "technologies": ["Web", "Cloud", "REST", "SOAP", "Web sockets", "Microservices",
+                    "SQL", "NoSQL", "Caching", "CI/CD", "Containerization", "Docker containers",
+                    "Messaging brokers", "Webhook", "Asynchronous API", "Load balancer",
+                    "Automated testing"]
+            },
+            {
+                "category": "Language",
+                "technologies": ["C#", "SQL", "JavaScript", "TypeScript", "Java", "Python", "Dart"]
+            },
+            {
+                "category": "Framework",
+                "technologies": [".NET", "ASP.NET", "Vue", "Flutter"]
+            },
+            {
+                "category": "SQL",
+                "technologies": ["MS SQL", "Oracle"]
+            },
+            {
+                "category": "NoSQL",
+                "technologies": ["Redis", "Azure Cosmos DB", "Firebase Realtime Database"]
+            },
+            {
+                "category": "CI/CD",
+                "technologies": ["Azure DevOps", "Jenkins", "Octopus Deploy"]
+            },
+            {
+                "category": "Development and Hosting",
+                "technologies": ["Azure", "Firebase", "Google APIs"]
+            },
+            {
+                "category": "Azure",
+                "technologies": ["App Service", "App Service for containers",
+                    "Storage account", "Container App", "Cosmos DB"]
+            },
+            {
+                "category": "Testing",
+                "technologies": ["Unit test", "Integration tests", "E-2-E tests",
+                    "Performance tests", "Load tests"]
+            },
+            {
+                "category": "Version control",
+                "technologies": ["GIT"]
+            }
+        ]
+    }
+}

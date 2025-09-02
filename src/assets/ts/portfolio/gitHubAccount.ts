@@ -2,7 +2,7 @@ import { Image } from "../image";
 import { Preview } from "../preview";
 import { Repository } from "./repository";
 import { ContributionCalendar } from "./contributionCalendar";
-import { gitHubAccount } from '../../json/gitHubAccount.json';
+import { gitHubAccount } from '../../json/portfolio/gitHubAccount.json';
 
 export class GitHubAccount {
     public readonly profile: Preview;

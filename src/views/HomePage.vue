@@ -2,7 +2,7 @@
     import PageShortcut from '@/components/Home/Shortcut.vue';
     import { Shortcut } from '@/assets/ts/home/shortcut';
     import { Image } from '@/assets/ts/image';
-    import { menu } from '@/assets/json/menu.json';
+    import { menu } from '@/assets/json/home/menu.json';
     
     const shortcuts: Shortcut[] = menu.shortcuts.map(shortcut => {
         return new Shortcut(shortcut.name, shortcut.destination,

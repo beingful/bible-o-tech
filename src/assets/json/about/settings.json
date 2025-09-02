@@ -1,0 +1,6 @@
+{
+    "settings": {
+        "verificationBadge": "/about/verified-badge.png",
+        "closeButtonIcon": "/about/close-window-icon.png"
+    }
+}
