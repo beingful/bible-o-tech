@@ -1,22 +1,25 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '@/views/HomePage.vue';
+import AboutPage from '@/views/AboutPage.vue';
+import PortfolioPage from '@/views/PortfolioPage.vue';
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: '/bible-o-tech/',
       name: 'Home',
-      component: import('@/views/HomePage.vue')
+      component: HomePage
     },
     {
-      path: '/about',
+      path: '/bible-o-tech/about',
       name: 'About',
-      component: import('@/views/AboutPage.vue')
+      component: AboutPage
     },
     {
       path: '/portfolio',
       name: 'Portfolio',
-      component: import('@/views/PortfolioPage.vue')
+      component: PortfolioPage
     }
   ],
 })
