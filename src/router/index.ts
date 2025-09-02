@@ -4,15 +4,15 @@ import AboutPage from '@/views/AboutPage.vue';
 import PortfolioPage from '@/views/PortfolioPage.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/bible-o-tech/',
+      path: '/',
       name: 'Home',
       component: HomePage
     },
     {
-      path: '/bible-o-tech/about',
+      path: '/about',
       name: 'About',
       component: AboutPage
     },
