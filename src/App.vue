@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <div class="grid min-h-max h-full w-full">
+  <div class="flex justify-center min-h-max h-full w-full">
     <RouterView/>
   </div>
   <RouterLink id="main-menu-link" to="/" v-show="router.path != '/'">

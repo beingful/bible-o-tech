@@ -18,8 +18,8 @@
 
 <template>
     <div :class="['paragraph', { 'paragraph-border' : withBorder }]">
-        <div class="h-[2rem] w-[2rem]" v-if="icon != null">
-            <img class="object-contain" :src="icon.path" :alt="icon.alt" />
+        <div v-if="icon != null">
+            <img class="min-h-[2rem] min-w-[2rem] h-[2rem] w-[2rem]" :src="icon.path" :alt="icon.alt" />
         </div>
         <slot></slot>
     </div>

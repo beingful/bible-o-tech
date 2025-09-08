@@ -8,7 +8,8 @@
             "name": "Hanna Kasai",
             "position": "Software Developer",
             "bio": "Backend Engineer",
-            "picture": "/about/bio/profile-picture.jfif"
+            "picture": "/about/bio/profile-picture.jfif",
+            "resume": "/cv.pdf"
         },
         "location": {
             "country": "United States",

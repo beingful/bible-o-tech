@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-    import Follow from './Follow.vue';
+    import FollowButton from './FollowButton.vue';
     import type { PropType } from 'vue';
     import type { Image } from '@/assets/ts/image';
     import type { Candidacy } from '@/assets/ts/about/candidacy';
@@ -43,8 +43,9 @@
                 <button class="link text-sm" @click="$emit('openContactInfoClicked')">Contact info</button>
             </div>
         </div>
-        <a :href="visit">
-            <Follow/>
-        </a>
+        <div class="flex flex-row space-x-3">
+            <FollowButton :url="visit" caption="Follow" :show-svg="true" />
+            <FollowButton :url="candidacy.resume.path" caption="Resume" />
+        </div>
     </div>
 </template>

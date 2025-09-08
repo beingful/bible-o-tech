@@ -24,6 +24,7 @@ export class FileExplorer {
     }
 
     public static Directories = class {
-        public static readonly imageStorage: string = 'images'  
+        public static readonly imageStorage: string = 'images';
+        public static readonly pdfStorage: string = 'pdf';  
     }
 }

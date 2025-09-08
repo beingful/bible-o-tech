@@ -58,11 +58,3 @@
         </div>
     </div>
 </template>
-
-<style lang="css" scoped>
-    @reference "tailwindcss";
-    
-    #follow-button:hover {
-        @apply ring-1 ring-white/80 bg-[#71b7fb]/20 cursor-pointer;
-    }
-</style>

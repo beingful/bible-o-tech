@@ -8,6 +8,7 @@ import { Website } from '../website';
 import { linkedInAccount } from '../../json/about/linkedInAccount.json';
 import type { Location } from './location';
 import type { Skill } from './skill';
+import { Pdf } from '../pdf';
 
 export class LinkedInAccount {
     public readonly candidacy: Candidacy;
@@ -33,7 +34,8 @@ export class LinkedInAccount {
             linkedInAccount.candidacy.name,
             linkedInAccount.candidacy.position,
             linkedInAccount.candidacy.bio,
-            new Image(linkedInAccount.candidacy.picture));
+            new Image(linkedInAccount.candidacy.picture),
+            new Pdf(linkedInAccount.candidacy.resume));
     }
 
     private parseContactMethods() : ContactMethod[] {
